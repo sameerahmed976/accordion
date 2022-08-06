@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* Typography */
+  --regular-font: "Lato", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+
+  --heading-font: "Roboto Mono", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    monospace, sans-serif;
+
+  /* h5 font size paragraph */
+
+  /* start of for mobile */
+
+  --font-size-s-h1: 3.052rem;
+
+  --font-size-s-h2: 2.441rem;
+
+  --font-size-s-h3: 1.953rem;
+
+  --font-size-s-h4: 1.563rem;
+
+  --font-size-s-h5: 1.25rem;
+  /* major third 1.250 */
+  --font-size-s-h6: 1rem;
+  /* end of for mobile */
+
+<<<<<<< HEAD
+  --line-height: 1.5;
+
+  --box-shadow-1: 2px 4px 6px grey;
+
+  --transition-8: all 0.8s ease-in-out;
+
+  /* colors (soft palette)*/
+
+  --primary-color: #002b5b;
+  --secondary-color: #002b5b;
+  --background-color: #256d85;
+  --heading-color: #8fe3cf;
+=======
+  --line-height: 1.75;
+
+  --box-shadow-1: 2px 4px 6px #000;
+
+  --transition-8: all 0.8s ease-in-out;
+  --primary-color: #47b9de;
+  --secondary-color: white;
+  --background-color: white;
+>>>>>>> cfa8ebc75700e2bab8f5813c7099afb4489f9dd8
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--regular-font);
+<<<<<<< HEAD
+  line-height: var(--line-height);
+=======
+>>>>>>> cfa8ebc75700e2bab8f5813c7099afb4489f9dd8
+  /* font size :16px */
+}
+
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+<<<<<<< HEAD
+img {
+  display: block;
+  width: 100%;
+}
+
+/* mobile */
+
+h1 {
+  font-size: var(--font-size-s-h1);
+}
+h2 {
+  font-size: var(--font-size-s-h2);
+}
+h3 {
+  font-size: var(--font-size-s-h3);
+}
+h4 {
+  font-size: var(--font-size-s-h4);
+}
+h5 {
+  font-size: var(--font-size-s-h5);
+}
+h6 {
+  font-size: var(--font-size-s-h6);
+}
+p {
+  font-size: var(--font-size-s-h5);
+}
+
+.main {
+  display: grid;
+  place-items: center;
+  min-height: 40vh;
+  margin: 0 auto;
+  width: 90vw;
+  max-width: 1170px;
+  margin-top: 3rem;
+}
+
+.accordion {
+  background-color: var(--background-color);
+  margin-bottom: 1rem;
+  box-shadow: var(--box-shadow-1);
+  overflow: hidden;
+  max-width: 80vw;
+  border-radius: 0.5rem;
+  height: 3.875rem;
+  /* height: auto; */
+  transition: var(--transition-8);
+  position: relative;
+}
+.accordion::after {
+  content: "\002B";
+
+  position: fixed;
+  top: 20%;
+  right: 4%;
+  display: block;
+  color: white;
+  font-size: var(--font-size-s-h4);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.active-accordion {
+  transition: var(--transition-8);
+  height: 10rem;
+}
+
+.accordion-heading {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  padding: 1rem;
+  padding-left: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: var(--font-size-s-h5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.accordion-heading i {
+  color: white;
+}
+
+.minus {
+  top: 25%;
+  right: 5%;
+  position: absolute;
+  display: none;
+  cursor: pointer;
+  z-index: -1;
+}
+
+.plus {
+  /* display: none; */
+  cursor: pointer;
+}
+
+.accordion-content {
+  color: var(--primary-color);
+  background-color: white;
+  max-width: 100%;
+  text-transform: capitalize;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  font-size: var(--font-size-s-h6);
+  padding: 1rem;
+=======
+.grid {
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  width: 85vw;
+  max-width: 1170px;
+  margin-top: 2rem;
+}
+.section-center-accordion {
+  background-color: var(--background-color);
+  padding: 1rem;
+  box-shadow: 2px 4px 6px #000;
+}
+
+.accordion-header {
+  background-color: var(--primary-color);
+  position: relative;
+  cursor: pointer;
+  transition: var(--transition-8);
+  border-radius: 5rem;
+  padding: 0 1rem;
+}
+
+.accordion-header::after {
+  content: "\02C5";
+  position: absolute;
+  display: block;
+  top: 25%;
+  right: 6%;
+  font-size: var(--font-size-s-h5);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: var(--transition-8);
+}
+
+.accordion-header h1 {
+  letter-spacing: 2px;
+}
+
+.active {
+  transition: var(--transition-8);
+}
+
+.active,
+.accordion-header:hover {
+  background-color: #000;
+}
+
+.active::after {
+  content: "\02C4";
+  position: absolute;
+  display: block;
+  top: 25%;
+  right: 6%;
+  font-size: var(--font-size-s-h5);
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: var(--transition-8);
+}
+
+.accordion-header h1 {
+  padding: 1rem;
+  text-transform: capitalize;
+  font-size: var(--font-size-s-h5);
+  letter-spacing: 2px;
+  font-family: var(--heading-font);
+  color: white;
+}
+
+.accordion-content {
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+  margin-top: 0.1rem;
+  margin-bottom: 1rem;
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition-8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+  max-width: 95%;
+  box-shadow: var(--box-shadow-1);
+}
+
+.active-accordion {
+  height: 10rem;
+}
+
+.accordion-content p {
+  letter-spacing: 2px;
+  font-size: var(--font-size-s-h6);
+
+  max-width: 90%;
+  word-break: break-all;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-center-accordion {
+    max-width: 60%;
+  }
+>>>>>>> cfa8ebc75700e2bab8f5813c7099afb4489f9dd8
+}
